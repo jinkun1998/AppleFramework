@@ -15,6 +15,7 @@
 		E979A4C12C1EED140050429B /* AppleFrameworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E979A4C02C1EED140050429B /* AppleFrameworkUITestsLaunchTests.swift */; };
 		E979A4CE2C1EEDA90050429B /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = E979A4CD2C1EEDA90050429B /* Framework.swift */; };
 		E979A4D02C1EEFEC0050429B /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E979A4CF2C1EEFEC0050429B /* FrameworkGridView.swift */; };
+		E979A4D22C1EF6FF0050429B /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E979A4D12C1EF6FF0050429B /* FrameworkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		E979A4C02C1EED140050429B /* AppleFrameworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E979A4CD2C1EEDA90050429B /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		E979A4CF2C1EEFEC0050429B /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		E979A4D12C1EF6FF0050429B /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				E979A4A92C1EED140050429B /* Preview Content */,
 				E979A4CD2C1EEDA90050429B /* Framework.swift */,
 				E979A4CF2C1EEFEC0050429B /* FrameworkGridView.swift */,
+				E979A4D12C1EF6FF0050429B /* FrameworkDetailView.swift */,
 			);
 			path = AppleFramework;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E979A4D22C1EF6FF0050429B /* FrameworkDetailView.swift in Sources */,
 				E979A4D02C1EEFEC0050429B /* FrameworkGridView.swift in Sources */,
 				E979A4CE2C1EEDA90050429B /* Framework.swift in Sources */,
 				E979A4A42C1EED130050429B /* AppleFrameworkApp.swift in Sources */,
