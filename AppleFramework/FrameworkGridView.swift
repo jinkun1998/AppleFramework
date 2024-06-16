@@ -16,9 +16,12 @@ struct FrameworkGridView: View {
             GridItem()
         ]
         
-        LazyVGrid(columns: colums){
-            FrameworkTitleView(appName: "App Clips", imageName: "app-clip")
+        LazyVGrid(columns: colums) {
+            ForEach(MockData.frameworks){ framework in
+                FrameworkTitleView(framework: framework)
+            }
         }
+        .safeAreaPadding(.top, 100)
     }
 }
 
@@ -29,17 +32,16 @@ struct FrameworkGridView: View {
 
 struct FrameworkTitleView:View{
     
-    let appName:String
-    let imageName:String
+    let framework: Framework
     
     var body:some View{
         VStack {
-            Image(imageName)
+            Image(framework.imageName)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 90, height: 90)
             
-            Text(appName)
+            Text(framework.name)
                 .font(.title2)
                 .fontWeight(.semibold)
         }
