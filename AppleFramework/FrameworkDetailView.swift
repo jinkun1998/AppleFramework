@@ -11,6 +11,7 @@ struct FrameworkDetailView: View {
     
     let framework: Framework
     @Binding var isDetailViewPresented: Bool
+    @State private var isSafariViewPresented: Bool = false
     
     var body: some View {
         VStack{
@@ -35,8 +36,18 @@ struct FrameworkDetailView: View {
             Text(framework.description)
                 .padding()
             
+//            Link(destination: URL(string: framework.urlString)!) {
+//                Text("Learn more")
+//                    .font(.title2)
+//                    .fontWeight(.semibold)
+//                    .frame(width: 280, height: 50)
+//                    .foregroundColor(Color.white)
+//                    .background(Color.red)
+//                    .cornerRadius(10)
+//            }
+            
             Button(action: {
-                
+                isSafariViewPresented = true
             }, label: {
                 Text("Learn more")
                     .font(.title2)
@@ -47,6 +58,9 @@ struct FrameworkDetailView: View {
                     .cornerRadius(10)
             })
         }
+        .sheet(isPresented: $isSafariViewPresented, content: {
+            SafariView(url: URL(string: framework.urlString)!)
+        })
     }
 }
 
