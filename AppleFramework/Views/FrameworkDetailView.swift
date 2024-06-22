@@ -10,13 +10,16 @@ import SwiftUI
 struct FrameworkDetailView: View {
     
     let framework: Framework
+    var isShowXMark: Bool = true
     @Binding var isDetailViewPresented: Bool
     @State private var isSafariViewPresented: Bool = false
     
     var body: some View {
         VStack{
             
-            XButton(isDetailViewPresented: $isDetailViewPresented)
+            if (isShowXMark){
+                XButton(isDetailViewPresented: $isDetailViewPresented)
+            }
             
             Spacer()
             
@@ -36,5 +39,7 @@ struct FrameworkDetailView: View {
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework, isDetailViewPresented: .constant(false))
+    FrameworkDetailView(
+        framework: MockData.sampleFramework,
+        isDetailViewPresented: .constant(false))
 }
